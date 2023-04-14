@@ -1,0 +1,30 @@
+{
+  "name": "git-huertocontrol",
+  "version": "1.0.0",
+  "description": "programa para administracion de huertos",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Luen-bit/git-huertoControl.git"
+  },
+  "keywords": [
+    "node",
+    "js",
+    "mysql"
+  ],
+  "author": "el ingeniero mas nalgon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Luen-bit/git-huertoControl/issues"
+  },
+  "homepage": "https://github.com/Luen-bit/git-huertoControl#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.22",
+    "xpress": "^2.4.6"
+  }
+}
