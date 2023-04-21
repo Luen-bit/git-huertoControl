@@ -1,5 +1,5 @@
 import express from 'express'
-import { createInsumo, deleteInsumo, getAllInsumos, getInsumo, updateInsumo } from '../controllers/controller';
+import { createInsumo, deleteInsumo, getAllInsumos, getInsumo, updateInsumo } from '../controllers/controller.js';
 const router = express.Router();
 
 router.get('/', getAllInsumos)

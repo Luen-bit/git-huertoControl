@@ -1,8 +1,8 @@
 //se importa la conexion a la bd
 
-import db from "../database/db";
+import db from "../database/db.js";
 // se imparta sequelize
-import { DataType, DataTypes } from "sequelize";
+import { DataTypes } from "sequelize";
 
 const insumoModel = db.define('insumos', {
     nombre_insumo:{type: DataTypes.STRING},
