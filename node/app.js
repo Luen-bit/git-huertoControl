@@ -12,6 +12,12 @@ app.use(cors())
 app.use(express.json())
 app.use('/insumos', insumosRoutes)
 
+try {
+    await db.authenticate()
+    console.log("Conexión a la base de datos")
+} catch (error) {
+    console.log(`Error al conectarse a la base de datos: ${error}`)
+}
 
 app.get('/',(req,res) =>{
     res.send('hola mundo')

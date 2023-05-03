@@ -20,7 +20,7 @@ export const getAllInsumos = async (req,res) => {
         const insumo = await insumoModel.findAll({
             where : {id:req.params.id}
         })
-        res.json(insumo)
+        res.json(insumo[0])
     } catch (error) {
         res.json({message:error.message})
     }
