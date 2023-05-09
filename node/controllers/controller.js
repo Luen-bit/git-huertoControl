@@ -27,9 +27,9 @@ export const getAllInsumos = async (req,res) => {
  }
 
 // crear un registro
- export const createInsumo = async(res,req) => {
+ export const createInsumo = async(req,res) => {
     try {
-        await insumoModel.create(re.body)
+        await insumoModel.create(req.body)
         res.json({
             "message": "Insumo credo correctamente"
         })
@@ -41,7 +41,7 @@ export const getAllInsumos = async (req,res) => {
 
 //actualizar un registro
 
-export const updateInsumo = async (res,req) => {
+export const updateInsumo = async (req,res) => {
     try {
         await insumoModel.update(req.body,{
             where: { id: req.params.id}
@@ -55,7 +55,7 @@ export const updateInsumo = async (res,req) => {
 }
 
 //Eliminar un registro
-export const deleteInsumo = async (res,req) => {
+export const deleteInsumo = async (req,res) => {
     try {
         await insumoModel.destroy({
             where: {id:req.params.id}

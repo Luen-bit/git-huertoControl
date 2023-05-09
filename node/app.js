@@ -19,9 +19,9 @@ try {
     console.log(`Error al conectarse a la base de datos: ${error}`)
 }
 
-app.get('/',(req,res) =>{
+/* app.get('/',(req,res) =>{
     res.send('hola mundo')
-})
+}) */
 
 app.listen(8000,()=>{
     console.log("server corriendo en http://localhost:8000/")
