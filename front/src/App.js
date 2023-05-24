@@ -3,9 +3,10 @@ import './App.css';
 
 
 //imprtar componentes
-
+import CompCreateInsumo from './insumos/createInsumo';
 import CompShowInsumos from './insumos/showInsumos';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 function App() {
   return (
     <div className="App">
@@ -15,7 +16,8 @@ function App() {
       </header>
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={ <CompShowInsumos/>} />
+          <Route path='/'       element={ <CompShowInsumos/>} />
+          <Route path='/create' element={ <CompCreateInsumo/>} />
         </Routes>
       </BrowserRouter>
       
