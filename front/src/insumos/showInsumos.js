@@ -11,7 +11,7 @@ const CompShowInsumos = () =>{
         getInsumos()
     },[])
 
-    //muestra todos los registros
+    //obtiene todos los registros
     const getInsumos = async () =>{
         const res = await axios.get(URI)
         setInsumo(res.data)
